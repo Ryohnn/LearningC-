@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Code\\C#\\LearningMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|c:\\code\\c#\\learningmvc\\learningmvc\\data\\learningmvccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|solutionrelative:learningmvc\\data\\learningmvccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|c:\\code\\c#\\learningmvc\\learningmvc\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|solutionrelative:learningmvc\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|c:\\code\\c#\\learningmvc\\learningmvc\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|solutionrelative:learningmvc\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2010B9C-17BD-4578-89A7-67615A878200}|..\\NUnitFirstTest\\NUnitFirstTest\\NUnitFirstTest.csproj|c:\\code\\c#\\nunitfirsttest\\nunitfirsttest\\mvctests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|c:\\code\\c#\\learningmvc\\learningmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E9B822-D26F-4C0F-8695-AD9B3C769E66}|LearningMVC\\LearningMVC.csproj|solutionrelative:learningmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LearningMVCContext.cs",
+              "DocumentMoniker": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Data\\LearningMVCContext.cs",
+              "RelativeDocumentMoniker": "LearningMVC\\Data\\LearningMVCContext.cs",
+              "ToolTip": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Data\\LearningMVCContext.cs",
+              "RelativeToolTip": "LearningMVC\\Data\\LearningMVCContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T20:14:14.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Repositories\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "LearningMVC\\Repositories\\BlogRepository.cs",
+              "ToolTip": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Repositories\\BlogRepository.cs",
+              "RelativeToolTip": "LearningMVC\\Repositories\\BlogRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T20:13:56.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Program.cs",
+              "RelativeDocumentMoniker": "LearningMVC\\Program.cs",
+              "ToolTip": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Program.cs",
+              "RelativeToolTip": "LearningMVC\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T18:43:20.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MVCTests.cs",
+              "DocumentMoniker": "C:\\Code\\C#\\NUnitFirstTest\\NUnitFirstTest\\MVCTests.cs",
+              "RelativeDocumentMoniker": "..\\NUnitFirstTest\\NUnitFirstTest\\MVCTests.cs",
+              "ToolTip": "C:\\Code\\C#\\NUnitFirstTest\\NUnitFirstTest\\MVCTests.cs",
+              "RelativeToolTip": "..\\NUnitFirstTest\\NUnitFirstTest\\MVCTests.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T17:16:20.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlogsController.cs",
+              "DocumentMoniker": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Controllers\\BlogsController.cs",
+              "RelativeDocumentMoniker": "LearningMVC\\Controllers\\BlogsController.cs",
+              "ToolTip": "C:\\Code\\C#\\LearningMVC\\LearningMVC\\Controllers\\BlogsController.cs",
+              "RelativeToolTip": "LearningMVC\\Controllers\\BlogsController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwEQAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T17:27:50.51Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
