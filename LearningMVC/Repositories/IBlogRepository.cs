@@ -4,20 +4,14 @@ namespace LearningMVC.Repositories
 {
     public interface IBlogRepository
     {
-        Task<Blog?> GetBlogById(int? id);
-
         Task<List<Blog>?> GetBlogList();
 
-        int Add(Blog blog);
+        Task<Blog?> GetBlogById(int blogId);
 
-        void Update(Blog blog);
+        Task<int> Create(Blog blog);
 
-        void Delete(Blog blog);
+        Task<int> Update(Blog blog);
 
-        Task SaveChanges();
-
-        bool Exists(int id);
-
-        IQueryable<object> GetLatest();
+        Task Delete(Blog blog);
     }
 }

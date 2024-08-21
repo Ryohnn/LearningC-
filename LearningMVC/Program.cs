@@ -1,13 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LearningMVC.Data;
 using LearningMVC.Repositories;
+using LearningMVC.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
+builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddDbContext<LearningMvcContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("LearningMVCContext") ?? throw new InvalidOperationException("Connection string 'LearningMVCContext' not found.")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.Configure<RouteOptions>(options =>
+    {
+        options.LowercaseUrls = true;
+        options.LowercaseQueryStrings = true;
+    }
+);
 
 var app = builder.Build();
 
@@ -23,9 +32,15 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
+app.MapControllerRoute(name: "blog",
+    pattern: "blogs/{*id}",
+    defaults: new { controller = "Blogs", action = "View" }
 );
 
 app.Run();

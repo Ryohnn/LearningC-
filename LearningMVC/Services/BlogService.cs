@@ -3,18 +3,33 @@ using LearningMVC.Repositories;
 
 namespace LearningMVC.Services;
 
-public class BlogService(IBlogRepository repo)
+public class BlogService(IBlogRepository repo) : IBlogService
 {
-    public int Create(Blog blog)
-    {
-        repo.Add(blog);
-        repo.SaveChanges();
+    public async Task<List<Blog>?> GetBlogList()
+        => await repo.GetBlogList();
 
+    public async Task<Blog?> GetBlogById(int blogId)
+        => await repo.GetBlogById(blogId);
+    
+    public async Task<int> Create(Blog blog)
+    {
+        await repo.Create(blog);
+        return blog.Id;
+    }
+    
+    public async Task<int> Update(Blog blog)
+    {
+        await repo.Update(blog);
         return blog.Id;
     }
 
-    public Blog GetLatestBlog()
+    public async Task<int> Delete(int blogId)
     {
-        repo.GetLatest();
+        var blog = await repo.GetBlogById(blogId);
+
+        if (blog != null)
+            await repo.Delete(blog);
+
+        return blogId;
     }
 }
