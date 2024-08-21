@@ -6,6 +6,19 @@
 
 <h1>Index</h1>
 
+@if (TempData["message"] != null)
+{
+    @if ((bool) TempData["success"]!)
+    {
+        @await Html.PartialAsync("Alerts/success");
+    }
+    
+    @if ((bool) TempData["fail"]!)
+    {
+        @await Html.PartialAsync("Alerts/danger");
+    }
+}
+
 <p>
     <a asp-action="Create" method="GET">Create New</a>
 </p>

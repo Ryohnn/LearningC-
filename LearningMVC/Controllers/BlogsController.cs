@@ -16,10 +16,16 @@ namespace LearningMVC.Controllers
         public async Task<IActionResult> Create(Blog blog)
         {
             if (!ModelState.IsValid)
+            {
+                TempData["message"] = "Failed to create a blog";
+                TempData["success"] = false;
                 return View(blog);
-            
+            }
+
             await service.Create(blog);
-            return RedirectToAction(nameof(Index));
+            TempData["message"] = "Blog created successfully";
+            TempData["success"] = true;
+            return View(blog);
         }
 
         public async Task<IActionResult> View(int id)
