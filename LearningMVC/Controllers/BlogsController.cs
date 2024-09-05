@@ -20,13 +20,13 @@ namespace LearningMVC.Controllers
             {
                 TempData["message"] = "Failed to create a blog";
                 TempData["success"] = false;
-                return View(blog);
+                return RedirectToAction(nameof(Index));
             }
 
             await service.Create(blog);
             TempData["message"] = "Blog created successfully";
             TempData["success"] = true;
-            return View(blog);
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> View(int id)

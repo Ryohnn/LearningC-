@@ -12,8 +12,7 @@
     {
         @await Html.PartialAsync("Alerts/success");
     }
-    
-    @if ((bool) TempData["fail"]!)
+    else if ((bool) TempData["fail"]!)
     {
         @await Html.PartialAsync("Alerts/danger");
     }
@@ -36,19 +35,19 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td>
-            <td>
-                <a asp-action="View" asp-route-id="@item.Id">View</a> |
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Content)
+        </td>
+        <td>
+            <a asp-action="View" asp-route-id="@item.Id">View</a> |
+            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        </td>
+    </tr>
 }
     </tbody>
 </table>

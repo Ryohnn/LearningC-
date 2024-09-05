@@ -11,7 +11,7 @@ public class BlogService(IBlogRepository repo) : IBlogService
         return await repo.GetBlogList();
     }
 
-    public async Task<IBlog> GetBlogById(int blogId)
+    public async Task<Blog?> GetBlogById(int blogId)
         => await repo.GetBlogById(blogId);
     
     public async Task<int> Create(Blog blog)
@@ -30,7 +30,7 @@ public class BlogService(IBlogRepository repo) : IBlogService
     {
         var blog = await repo.GetBlogById(blogId);
 
-        if (blog.IsEmpty())
+        if (blog is null)
         {
             throw new NullReferenceException($"Blog with id {blogId} does not exist");
         }

@@ -1,5 +1,4 @@
 ﻿using LearningMVC.Data;
-using LearningMVC.Factories;
 using LearningMVC.Models.Blogs;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,15 +8,13 @@ namespace LearningMVC.Repositories
     {
         public async Task<List<Blog>?> GetBlogList()
         {
-            var list = await context.Blog.ToListAsync();
-            return list.Count == 0 
-                ? [ BlogFactory.CreateNoBlog() ] : list;
+            return await context.Blog.ToListAsync();
         }
 
-        public async Task<Blog> GetBlogById(int blogId)
+        public async Task<Blog?> GetBlogById(int blogId)
         {
-            return await context.Blog.FirstOrDefaultAsync(b => b.Id == blogId)
-                   ?? BlogFactory.CreateNoBlog();
+            ArgumentOutOfRangeException.ThrowIfNegative(blogId);
+            return await context.Blog.FirstOrDefaultAsync(b => b.Id == blogId);
         }
 
         public async Task<int> Create(Blog blog)

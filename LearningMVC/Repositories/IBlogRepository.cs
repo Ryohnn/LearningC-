@@ -7,7 +7,7 @@ namespace LearningMVC.Repositories
     {
         Task<List<Blog>?> GetBlogList();
 
-        Task<Blog> GetBlogById(int blogId);
+        Task<Blog?> GetBlogById(int blogId);
 
         Task<int> Create(Blog blog);
 

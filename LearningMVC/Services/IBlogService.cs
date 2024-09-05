@@ -7,7 +7,7 @@ public interface IBlogService
 {
     public Task<List<Blog>?> GetBlogList();
     
-    public Task<IBlog> GetBlogById(int blogId);
+    public Task<Blog?> GetBlogById(int blogId);
 
     public Task<int> Create(Blog blog);
     
