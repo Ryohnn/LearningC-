@@ -1,2 +1,4 @@
-/LearningMVC/obj/*
-/LearningMVCUnitTests/obj/*
+LearningMVC/obj/*
+LearningMVC/bin/*
+LearningMVCUnitTests/obj/*
+LearningMVCUnitTests/bin/*
