@@ -1,4 +1,5 @@
 ﻿using LearningMVC.Models;
+using LearningMVC.Models.Blogs;
 using LearningMVC.Repositories;
 
 namespace LearningMVC.Services;
@@ -6,9 +7,11 @@ namespace LearningMVC.Services;
 public class BlogService(IBlogRepository repo) : IBlogService
 {
     public async Task<List<Blog>?> GetBlogList()
-        => await repo.GetBlogList();
+    {
+        return await repo.GetBlogList();
+    }
 
-    public async Task<Blog?> GetBlogById(int blogId)
+    public async Task<IBlog> GetBlogById(int blogId)
         => await repo.GetBlogById(blogId);
     
     public async Task<int> Create(Blog blog)
@@ -27,9 +30,12 @@ public class BlogService(IBlogRepository repo) : IBlogService
     {
         var blog = await repo.GetBlogById(blogId);
 
-        if (blog != null)
-            await repo.Delete(blog);
-
+        if (blog.IsEmpty())
+        {
+            throw new NullReferenceException($"Blog with id {blogId} does not exist");
+        }
+        
+        await repo.Delete(blog);
         return blogId;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LearningMVC.Data;
+using LearningMVC.Models.Blogs;
 using LearningMVC.Repositories;
 using LearningMVC.Services;
 
@@ -7,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
 builder.Services.AddScoped<IBlogService, BlogService>();
+builder.Services.AddScoped<IBlog, Blog>();
+
+
 builder.Services.AddDbContext<LearningMvcContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("LearningMVCContext") ?? throw new InvalidOperationException("Connection string 'LearningMVCContext' not found.")));
 // Add services to the container.

@@ -2,3 +2,5 @@ LearningMVC/obj/*
 LearningMVC/bin/*
 LearningMVCUnitTests/obj/*
 LearningMVCUnitTests/bin/*
+.idea/*
+.vs/*

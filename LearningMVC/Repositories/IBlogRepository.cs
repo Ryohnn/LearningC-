@@ -1,4 +1,5 @@
 ﻿using LearningMVC.Models;
+using LearningMVC.Models.Blogs;
 
 namespace LearningMVC.Repositories
 {
@@ -6,12 +7,12 @@ namespace LearningMVC.Repositories
     {
         Task<List<Blog>?> GetBlogList();
 
-        Task<Blog?> GetBlogById(int blogId);
+        Task<Blog> GetBlogById(int blogId);
 
         Task<int> Create(Blog blog);
 
         Task<int> Update(Blog blog);
 
-        Task Delete(Blog blog);
+        Task Delete (Blog blog);
     }
 }

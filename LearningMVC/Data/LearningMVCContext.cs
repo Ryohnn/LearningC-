@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LearningMVC.Models;
+using LearningMVC.Models.Blogs;
 
 namespace LearningMVC.Data
 {

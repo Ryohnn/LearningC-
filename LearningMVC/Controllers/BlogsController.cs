@@ -1,4 +1,5 @@
 ﻿using LearningMVC.Models;
+using LearningMVC.Models.Blogs;
 using Microsoft.AspNetCore.Mvc;
 using LearningMVC.Services;
 
