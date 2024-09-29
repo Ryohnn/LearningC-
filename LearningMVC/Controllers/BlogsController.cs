@@ -30,10 +30,10 @@ namespace LearningMVC.Controllers
         }
 
         public async Task<IActionResult> View(int id)
-            => View(await service.GetBlogById(id));
+            => View((Blog) await service.GetBlogById(id));
         
         public async Task<IActionResult> Edit(int id)
-            => View(await service.GetBlogById(id));
+            => View((Blog) await service.GetBlogById(id));
         
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Blog blog)
